@@ -1,37 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-	<title>Shopping List</title>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Grocery List.</title>
+	<link rel="stylesheet" href="./fontawesome-free-5.12.0-web/css/all.min.css" />
+	<link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-	<h1>Shopping List</h1>
-	<form action="add" method="get">
-		<label>Add Item: </label>
-		<input type="text" name="item">
-		<input id="addNeed" type="submit" value="Need">
-		<input id="addHave" type="submit" value="Have">
-	</form>
-	<h2> Need: </h2>
-	<ul class='list'>
-		<li><input type="checkbox" name="item"> Milk <a href="#">&#10006;</a></li>
-		<li><input type="checkbox" name="item"> Eggs <a href="#">&#10006;</a></li>
-		<li><input type="checkbox" name="item"> Kitten Food <a href="#">&#10006;</a></li>
-		<li><input type="checkbox" name="item"> Bacon <a href="#">&#10006;</a></li>
-	</ul>
-	<h2> Have: </h2>
-	<ul class='list'>
-		<li><input type="checkbox" name="item" checked> Steak <a href="#">&#10006;</a></li>
-		<li><input type="checkbox" name="item" checked> Cream <a href="#">&#10006;</a></li>
-		<li><input type="checkbox" name="item" checked> Cheese <a href="#">&#10006;</a></li>
-		<li><input type="checkbox" name="item" checked> Apples <a href="#">&#10006;</a></li>
-	</ul>
-	<script src="script.js"></script>
+	<section class="section-center">
+		<form class="grocery-form">
+			<p class="alert"></p>
+			<h3>Grocery List.</h3>
+			<div class="form-control">
+				<input type="text" id="grocery" placeholder="e.g. eggs" />
+				<button type="submit" class="submit-btn">submit</button>
+			</div>
+		</form>
+		<div class="grocery-container">
+			<div class="grocery-list">
 
+			</div>
+			<button class="clear-btn">clear items</button>
+		</div>
+	</section>
+	<script src="script.js"></script>
 </body>
 
 </html>
